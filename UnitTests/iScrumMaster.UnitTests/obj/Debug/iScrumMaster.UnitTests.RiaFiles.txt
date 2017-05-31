@@ -1,0 +1,2 @@
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\UnitTests\iScrumMaster.UnitTests
+Generated_Code\iScrumMaster.Web.g.cs

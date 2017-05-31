@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.diagnostics>
+    <sources>
+      <source name="System.ServiceModel"
+              switchValue="Information, ActivityTracing"
+              propagateActivity="true">
+        <listeners>
+          <add name="traceListener"
+              type="System.Diagnostics.XmlWriterTraceListener"
+              initializeData= "D:\ScrumMaster.svclog"/>
+        </listeners>
+      </source>
+    </sources>
+  </system.diagnostics>
+  <system.serviceModel>
+    <bindings>
+      <customBinding>
+        <binding name="PollingDuplexHttpBinding_IScrumService">
+          <pollingDuplex duplexMode="MultipleMessagesPerPoll" />
+          <binaryMessageEncoding />
+          <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647"
+              transferMode="StreamedResponse" />
+        </binding>
+      </customBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://iscrummasterservice.azurewebsites.net/ScrumService.svc"
+          binding="customBinding" bindingConfiguration="PollingDuplexHttpBinding_IScrumService"
+          contract="iScrumMaster.Infrastructure.Models.IScrumService"
+          name="PollingDuplexHttpBinding_IScrumService" />
+    </client>
+    <extensions />
+  </system.serviceModel>
+</configuration>

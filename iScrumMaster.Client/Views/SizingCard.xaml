@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="iScrumMaster.Views.SizingCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" >
+    <Grid x:Name="LayoutRoot" Background="White" Width="50" Height="70">
+        <Button Click="Button_Click">
+            <Button.Content>
+                <Grid>
+                    <Image Source="/iScrumMaster;component/Images/cardbg.png"/>
+                    <TextBlock Text="{Binding Path=StorySize}"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="#FF1FB513"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+
+    </Grid>
+</UserControl>

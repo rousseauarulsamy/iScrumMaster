@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="iScrumMaster.Views.SizingPointsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:Controls="clr-namespace:iScrumMaster.Views">
+   
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>      
+        
+        <ScrollViewer x:Name="scrollGridItems" Grid.Row="0" HorizontalScrollBarVisibility="Auto">
+            <Grid x:Name="gridItems" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Controls:SizingCard x:Name="size1" StorySize="0" Grid.Row="0" Grid.Column="0" />
+                <Controls:SizingCard x:Name="size2" StorySize="0.5" Grid.Row="0" Grid.Column="1"/>
+                <Controls:SizingCard x:Name="size3" StorySize="1" Grid.Row="0" Grid.Column="2"/>
+                <Controls:SizingCard x:Name="size4" StorySize="2" Grid.Row="0" Grid.Column="3"/>
+                <Controls:SizingCard x:Name="size5" StorySize="3" Grid.Row="0" Grid.Column="4"/>
+                <Controls:SizingCard x:Name="size6" StorySize="5" Grid.Row="0" Grid.Column="5"/>
+                <Controls:SizingCard x:Name="size7" StorySize="8" Grid.Row="0" Grid.Column="6"/>
+                <Controls:SizingCard x:Name="size8" StorySize="13" Grid.Row="0" Grid.Column="7"/>
+                <Controls:SizingCard x:Name="size9" StorySize="20" Grid.Row="0" Grid.Column="8"/>
+                <Controls:SizingCard x:Name="size10" StorySize="40" Grid.Row="0" Grid.Column="9"/>
+                <Controls:SizingCard x:Name="size11" StorySize="100" Grid.Row="0" Grid.Column="10"/>
+                <Controls:SizingCard x:Name="size12" StorySize="1000" Grid.Row="0" Grid.Column="11" />
+            </Grid>
+        </ScrollViewer>        
+    </Grid>
+</UserControl>

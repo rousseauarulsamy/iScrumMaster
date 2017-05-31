@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="iScrumMaster.Client.AppInstalUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="1000" d:DesignWidth="1000">
+
+    <Grid x:Name="LayoutRoot">
+        <Rectangle Height="300" Width="495" RadiusX="5" RadiusY="5" Fill="#E3E5E4"/>
+        <StackPanel Margin="14" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="instaled">
+            <TextBlock Text="This application needs to be installed." FontSize="16" HorizontalAlignment="Center"/>
+            <TextBlock Text="Click the Install button below." FontSize="16" HorizontalAlignment="Center"/>
+            <Button Click="Button_Click" Height="60" Width="150" Margin="0,20,0,0" Background="#FF59AECE" Content="INSTALL" HorizontalAlignment="Center" FontSize="20">
+            </Button>
+        </StackPanel>
+        <TextBlock Text="The application is already installed onto this computer" TextWrapping="Wrap" x:Name="alreadyinstalledText" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid.Background>
+            <RadialGradientBrush RadiusX="0.7" RadiusY="0.7">
+                <GradientStop Color="#FF343740" Offset="1"/>
+                <GradientStop Color="#FF797D83"/>
+            </RadialGradientBrush>
+
+        </Grid.Background>
+    </Grid>
+    
+</UserControl>

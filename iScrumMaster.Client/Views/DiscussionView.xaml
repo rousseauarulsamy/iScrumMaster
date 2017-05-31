@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="iScrumMaster.Views.DiscussionView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+    <Grid x:Name="LayoutRoot" Background="White" >    
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtDiscussionHeader" Text="Discussion" Grid.Row="0" Foreground="#FF5DB1CF" FontWeight="Bold" FontSize="12" HorizontalAlignment="Left"/>
+        <ScrollViewer x:Name="scrollViewerBlk" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <TextBox x:Name="txtblkDiscussion" ScrollViewer.VerticalScrollBarVisibility="Visible" IsReadOnly="True"></TextBox>
+        </ScrollViewer>
+        <ScrollViewer x:Name="scrollViewer" Grid.Row="2" >
+            <TextBox x:Name="txtDiscussion" AcceptsReturn="True"/>
+            </ScrollViewer>
+        <Button x:Name="btnSend" Grid.Row="3" Content="Send" HorizontalAlignment="Right" Click="btnSend_Click" Width="75" />
+    </Grid>
+</UserControl>

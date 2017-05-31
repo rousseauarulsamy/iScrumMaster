@@ -1,0 +1,5 @@
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\iScrumMaster.Infrastructure\bin\Release\iScrumMaster.Infrastructure.dll
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\iScrumMaster.Infrastructure\bin\Release\iScrumMaster.Infrastructure.pdb
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\iScrumMaster.Infrastructure\obj\Release\iScrumMaster.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\iScrumMaster.Infrastructure\obj\Release\iScrumMaster.Infrastructure.dll
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\iScrumMaster.Infrastructure\obj\Release\iScrumMaster.Infrastructure.pdb

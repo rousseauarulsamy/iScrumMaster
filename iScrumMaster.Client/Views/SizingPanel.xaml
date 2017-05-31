@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="iScrumMaster.Views.SizingPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:Controls="clr-namespace:iScrumMaster.Views">
+   
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="25"/>            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="68"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="txtBlk" Text="User Story:" Grid.Column="0"></TextBlock>
+            <TextBox x:Name="txtStoryID" Grid.Column="1" Width="100" HorizontalAlignment="Left"></TextBox>
+            <Button x:Name="btnUpdateStory" HorizontalAlignment="Right" Click="btnUpdateStory_Click" Grid.Column="2">Update Story</Button>
+        </Grid>
+        
+        <ScrollViewer x:Name="scrlUserStory" Grid.Row="1">
+            <TextBox x:Name="txtStory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AcceptsReturn="True"/>
+        </ScrollViewer>
+        <Controls:SizingPointsView x:Name="sizingPointsView" IsEnabled="False" Grid.Row="2"></Controls:SizingPointsView>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnStartEstimation" Click="btnStartEstimation_Click" Width="100" Grid.Column="0">Start Estimation</Button>
+            <Button x:Name="btnEndEstimation" IsEnabled="False" Click="btnEndEstimation_Click" Width="100" Grid.Column="1">End Estimation</Button>
+        </Grid>     
+    </Grid>
+</UserControl>

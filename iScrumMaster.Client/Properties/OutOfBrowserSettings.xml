@@ -1,0 +1,15 @@
+<OutOfBrowserSettings ShortName="iScrumMaster" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>iScrumMaster.Client Application on your desktop; at home, at work or on the go.</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="iScrumMaster" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.SecuritySettings>
+    <SecuritySettings ElevatedPermissions="Required" />
+  </OutOfBrowserSettings.SecuritySettings>
+  <OutOfBrowserSettings.Icons>
+    <Icon Size="16,16">Icons/16.png</Icon>
+    <Icon Size="32,32">Icons/32.png</Icon>
+    <Icon Size="48,48">Icons/48.png</Icon>
+    <Icon Size="128,128">Icons/128.png</Icon>
+  </OutOfBrowserSettings.Icons>
+</OutOfBrowserSettings>

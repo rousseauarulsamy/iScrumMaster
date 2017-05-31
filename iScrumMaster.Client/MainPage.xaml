@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="iScrumMaster.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:Controls="clr-namespace:iScrumMaster.Views">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Controls:HeaderView x:Name="headerView" Grid.Row="0" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="LightGray" BorderThickness="5" Grid.RowSpan="3" Grid.Column="0" Grid.Row="1">
+            <Controls:MembersDisplayView x:Name="memberDispalyView" />
+        </Border>
+        <Grid  Grid.Row="1" Grid.Column="1" x:Name="gridTabManager">
+            <telerik:RadTabControl VerticalAlignment="Top" x:Name="radTabManager"
+				DisplayMemberPath="Content" DropDownDisplayMode="Visible" ScrollMode="Viewport" BorderThickness="0">
+                <telerik:RadTabItem DropDownContent="Planning" Header="Planning" x:Name="tabPlanning" >
+                    <telerik:RadTabItem.Content>                         
+                        <Controls:SizingView x:Name="sizingView" />
+                    </telerik:RadTabItem.Content>
+                </telerik:RadTabItem>
+                <telerik:RadTabItem DropDownContent="Retrospective" Header="Retrospective" x:Name="tabRetro">
+                    <Controls:RetrospectiveView x:Name="retroView"></Controls:RetrospectiveView>
+                </telerik:RadTabItem>
+                <telerik:RadTabItem DropDownContent="Manage Users" Header="Manage Users" x:Name="tabManageUsers" Visibility="Collapsed">
+                    <Controls:ManageUsersView x:Name="managerUsers"/>
+                </telerik:RadTabItem>
+                <telerik:RadTabItem DropDownContent="Settings" Header="Settings" x:Name="tabSettings" Visibility="Collapsed">
+                    <Controls:SettingsView x:Name="settignsView"></Controls:SettingsView>
+                </telerik:RadTabItem>
+                
+            </telerik:RadTabControl>
+        </Grid>
+        <TextBlock x:Name="txtNoMeeting" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="No meeting is currently running...." FontSize="25"  Visibility="Collapsed"></TextBlock>
+    </Grid>
+</UserControl>

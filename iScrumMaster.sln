@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iScrumMaster.Web", "iScrumMaster.Web\iScrumMaster.Web.csproj", "{41598B01-58AA-46B2-A86E-355596ED07DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iScrumMaster.Service", "iScrumMaster.Service\iScrumMaster.Service.csproj", "{248DB373-7D08-40A5-A300-167AD27887BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iScrumMaster.Client", "iScrumMaster.Client\iScrumMaster.Client.csproj", "{32FECC21-26D8-410F-A028-47F41868449E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iScrumMaster.Client.Infrastructure", "iScrumMaster.Client.Infrastructure\iScrumMaster.Client.Infrastructure.csproj", "{13DA757E-3E5D-441B-8378-84CF799F595D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iScrumMaster.Infrastructure", "iScrumMaster.Infrastructure\iScrumMaster.Infrastructure.csproj", "{D9A05EBA-852D-40BE-89EC-7B86F6E3F1F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iScrumMasterPerformanceTest", "iScrumMasterPerformanceTest\iScrumMasterPerformanceTest.csproj", "{7065855D-3135-48D0-BFC2-83CED2A14A1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D5D27F7-E32D-488A-8A7D-591A9717FA81}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41598B01-58AA-46B2-A86E-355596ED07DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41598B01-58AA-46B2-A86E-355596ED07DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41598B01-58AA-46B2-A86E-355596ED07DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41598B01-58AA-46B2-A86E-355596ED07DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248DB373-7D08-40A5-A300-167AD27887BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248DB373-7D08-40A5-A300-167AD27887BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248DB373-7D08-40A5-A300-167AD27887BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248DB373-7D08-40A5-A300-167AD27887BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32FECC21-26D8-410F-A028-47F41868449E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32FECC21-26D8-410F-A028-47F41868449E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32FECC21-26D8-410F-A028-47F41868449E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32FECC21-26D8-410F-A028-47F41868449E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13DA757E-3E5D-441B-8378-84CF799F595D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13DA757E-3E5D-441B-8378-84CF799F595D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13DA757E-3E5D-441B-8378-84CF799F595D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13DA757E-3E5D-441B-8378-84CF799F595D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A05EBA-852D-40BE-89EC-7B86F6E3F1F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A05EBA-852D-40BE-89EC-7B86F6E3F1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A05EBA-852D-40BE-89EC-7B86F6E3F1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A05EBA-852D-40BE-89EC-7B86F6E3F1F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7065855D-3135-48D0-BFC2-83CED2A14A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7065855D-3135-48D0-BFC2-83CED2A14A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7065855D-3135-48D0-BFC2-83CED2A14A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7065855D-3135-48D0-BFC2-83CED2A14A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="iScrumMaster.Views.SizeComparisonView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    d:DesignHeight="300" d:DesignWidth="400">    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <telerik:RadCartesianChart>
+
+            <telerik:BarSeries ItemsSource="{Binding Items}"
+                                 CategoryBinding="Size" ValueBinding="UserCount">
+                <telerik:BarSeries.PointTemplate>
+                    <DataTemplate>
+                        <Border Background="#FF25A0DA" />
+                    </DataTemplate>
+                </telerik:BarSeries.PointTemplate>
+
+            </telerik:BarSeries>
+            <telerik:RadCartesianChart.VerticalAxis>
+                <telerik:LinearAxis HorizontalLocation="Right" MajorStep="1"/>
+            </telerik:RadCartesianChart.VerticalAxis>
+            <telerik:RadCartesianChart.HorizontalAxis>
+                <telerik:CategoricalAxis GapLength="0.5" PlotMode="OnTicksPadded" />
+            </telerik:RadCartesianChart.HorizontalAxis>           
+        </telerik:RadCartesianChart>
+        </Grid>
+</UserControl>

@@ -1,0 +1,3 @@
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\UnitTests\iScrumMaster.UnitTests\obj\Debug\iScrumMaster.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\UnitTests\iScrumMaster.UnitTests\obj\Debug\App.g.cs
+C:\Users\rarulsa\Source\Repos\optum-ecac-rarulsamy\iScrumMaster\UnitTests\iScrumMaster.UnitTests\obj\Debug\iScrumMaster.UnitTests.g.resources
