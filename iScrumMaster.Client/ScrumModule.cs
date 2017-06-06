@@ -10,6 +10,9 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
+/// <summary>
+/// Testing auto build.
+/// </summary>
 namespace iScrumMaster
 {
     [Export]
