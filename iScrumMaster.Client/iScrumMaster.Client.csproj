@@ -165,9 +165,11 @@
     <Compile Include="EmptyUserControl.xaml.cs">
       <DependentUpon>EmptyUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LoggingService.cs" />
     <Compile Include="LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LogManager.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

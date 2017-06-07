@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="iScrumMaster.Logging.LoggingService" CodeBehind="LoggingService.svc.cs" %>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.diagnostics>
+    <sources>
+      <source name="System.ServiceModel"
+              switchValue="Information, ActivityTracing"
+              propagateActivity="true">
+        <listeners>
+          <add name="traceListener"
+              type="System.Diagnostics.XmlWriterTraceListener"
+              initializeData= "D:\ScrumMaster.svclog"/>
+        </listeners>
+      </source>
+    </sources>
+  </system.diagnostics>
+  <system.serviceModel>
+    <bindings>
+      <customBinding>
+        <binding name="PollingDuplexHttpBinding_IScrumService">
+          <pollingDuplex duplexMode="MultipleMessagesPerPoll" />
+          <binaryMessageEncoding />
+          <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647"
+              transferMode="StreamedResponse" />
+        </binding>
+      </customBinding>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_ILoggingService" maxBufferSize="2147483647"
+            maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://LH7U0CND61607J1.ms.ds.uhc.com/iScrumMaster.Service.DEV/ScrumService.svc"
+          binding="customBinding" bindingConfiguration="PollingDuplexHttpBinding_IScrumService"
+          contract="iScrumMaster.Infrastructure.Models.IScrumService"
+          name="PollingDuplexHttpBinding_IScrumService" />
+      <endpoint address="http://LH7U0CND61607J1.ms.ds.uhc.com/iScrumMaster.Logging.Service/LoggingService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ILoggingService"
+                contract="iScrumMaster.Models.ILoggingService" name="BasicHttpBinding_ILoggingService" />
+    </client>
+    <extensions />
+  </system.serviceModel>
+</configuration>

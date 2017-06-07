@@ -23,12 +23,21 @@
               transferMode="StreamedResponse" />
         </binding>
       </customBinding>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_ILoggingService" maxBufferSize="2147483647"
+            maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
     </bindings>
     <client>
-      <endpoint address="http://iscrummasterservice.azurewebsites.net/ScrumService.svc"
+      <endpoint address="http://LH7U0CND61607J1.ms.ds.uhc.com/iScrumMaster.Service.DEV/ScrumService.svc"
           binding="customBinding" bindingConfiguration="PollingDuplexHttpBinding_IScrumService"
           contract="iScrumMaster.Infrastructure.Models.IScrumService"
           name="PollingDuplexHttpBinding_IScrumService" />
+      <endpoint address="http://LH7U0CND61607J1.ms.ds.uhc.com/iScrumMaster.Logging.Service/LoggingService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ILoggingService"
+                contract="iScrumMaster.Models.ILoggingService" name="BasicHttpBinding_ILoggingService" />
     </client>
     <extensions />
   </system.serviceModel>

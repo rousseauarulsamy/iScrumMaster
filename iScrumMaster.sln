@@ -20,6 +20,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Local.testsettings = Local.testsettings
 	EndProjectSection
 EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "iScrumMaster.Service.Azure", "iScrumMaster.Service.Azure\iScrumMaster.Service.Azure.ccproj", "{EC398EFE-9DF2-4C1D-BBEE-89FA4673D251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iScrumMaster.Logging.Service", "iScrumMaster.Logging\iScrumMaster.Logging.Service.csproj", "{A8E4D9AD-7F85-4905-9358-E9D0A8E7C887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,14 @@ Global
 		{7065855D-3135-48D0-BFC2-83CED2A14A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7065855D-3135-48D0-BFC2-83CED2A14A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7065855D-3135-48D0-BFC2-83CED2A14A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC398EFE-9DF2-4C1D-BBEE-89FA4673D251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC398EFE-9DF2-4C1D-BBEE-89FA4673D251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC398EFE-9DF2-4C1D-BBEE-89FA4673D251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC398EFE-9DF2-4C1D-BBEE-89FA4673D251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E4D9AD-7F85-4905-9358-E9D0A8E7C887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E4D9AD-7F85-4905-9358-E9D0A8E7C887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E4D9AD-7F85-4905-9358-E9D0A8E7C887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E4D9AD-7F85-4905-9358-E9D0A8E7C887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -46,7 +46,8 @@ namespace iScrumMaster.ViewModels
         public void _serviceClient_LoginCompleted(object sender, LoginCompletedEventArgs e)
         {
             if (e != null && e.Result != null && e.Error == null)
-            {                
+            {
+                LogManager.LogMessage(Models.LogTypes.Info, "Successfull Authentication");
                 GlobalHelper.sessionManager = e.Result;
                 GlobalHelper.sessionManager.CurrentProject = new Project { ID = GlobalHelper.sessionManager.CurrentUser.ProjectID };
                 var mainPage = ServiceLocator.Current.GetInstance<MainPage>();
@@ -60,6 +61,7 @@ namespace iScrumMaster.ViewModels
             else
             {
                 this.ErrorMessage = "User name or password is not correct.";
+                LogManager.LogMessage(Models.LogTypes.Error, "Wrong user name or password");
             }
             this.Passcode = string.Empty;
         }
@@ -110,6 +112,7 @@ namespace iScrumMaster.ViewModels
         {
             if (!string.IsNullOrEmpty(this.UserName) && !string.IsNullOrEmpty(this.Passcode))
             {
+                LogManager.LogMessage(Models.LogTypes.Info, "Validated User Credentials");
                 var credentials = this._serviceClient.ChannelFactory.Endpoint.Behaviors.Find<ClientCredentials>();
                 credentials.UserName.UserName = this.UserName;
                 credentials.UserName.Password = this.Passcode;
